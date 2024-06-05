@@ -1,1 +1,5 @@
-
+<ul>
+  <li (click)="setCocktail(index)" *ngFor="let c of cocktails; index as index">
+    {{ c.name }}
+  </li>
+</ul>
