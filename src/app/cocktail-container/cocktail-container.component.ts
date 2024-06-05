@@ -30,7 +30,7 @@ export class CocktailContainerComponent {
   selectedCocktail = this.cocktails[0];
 
   updateCocktail(i: any) {
-    console.log(i);
     this.selectedCocktail = this.cocktails[i];
+    console.log(this.selectedCocktail.img);
   }
 }
