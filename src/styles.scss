@@ -125,6 +125,68 @@ body {
     transition: background-color 0.4s;
   }
 }
+.list-primary-action {
+  li {
+    &:hover {
+      background-color: var(--primary);
+      color: white;
+      cursor: pointer;
+    }
+    transition: background-color 0.4s;
+  }
+}
+.active {
+  padding: 10px 15px;
+  background-color: var(--secondary);
+}
+.badge {
+  background-color: var(--secondary);
+  border-radius: 3px;
+  padding: 2px 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.list-primary {
+  li {
+    padding: 10px 15px;
+    border: 1px solid var(--lightgray);
+    border-top: 0;
+  }
+  li:first-child {
+    border-top: 1px solid var(--lightgray);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+/*******************************************/
+/**************** HEADER *******************/
+/*******************************************/
+nav {
+  background: var(--primary);
+  color: white;
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+// ul {
+//   li {
+//     padding: 10px 20px;
+//     display: inline-block;
+//     border-radius: 3px;
+//     cursor: pointer;
+//     margin-right: 10px;
+//     &:hover {
+//       background-color: var(--secondary);
+//     }
+//     transition: background-color 0.4s;
+//   }
+// }
 .flex-fill {
   flex: 1 1 auto;
 }
